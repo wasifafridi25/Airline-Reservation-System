@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Hotel</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/datepicker.css">
+        <link rel="stylesheet" href="css/tooplate-style.css">
+        <link rel="stylesheet" href="style.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <style>
+        .jumbotron{
+            background: url("hotel.jpeg") no-repeat;
+            background-size: cover;
+            background-position:center;
+
+            text-align: center;
+            color:transparent;
+        }
+
+        .book{
+            position: relative;
+            left:-140px;
+            top:-210px;
+        }
+    </style>
+</head>
+<body>
+
+	<nav class = "navbar bg-success navbar-dark navbar-expand-md sticky-top">
+  		<div class = "m1">
+  			<ul class = "navbar-nav">
+	  			<li class = "nav-item">
+  					<p class = "nav-item lead color"> Airline Reservation</p>
+  				</li>
+  				<ul class = "navbar-nav">
+	  			<li class = "nav-item">
+  					<div class = "logo nav-item"><img id = "icon" src = "plane-icon.png"></div>
+  				</li>
+  		</div>
+        <div class = "m2">
+            
+            <ul class = "navbar-nav">
+                <li class = "nav-item">
+                    <a class = "nav-link color" href = "online booking.html">Home</a>
+                </li>
+                <li class = "nav-item">
+                    <a class = "nav-link color" href = "#here">Hotel Booking</a>
+                </li>
+                <li class = "nav-item">
+                    <a class = "nav-link color" href = "weather.html">Check Weather</a>
+                </li>
+                <li class = "nav-item">
+                    <a class = "nav-link color" href = "#">Search Hotels</a>
+                </li>
+                 <li class = "nav-item">
+                    <a class = "nav-link color" href = "stats.html">Stats</a>
+                </li>
+                <li class = "nav-item">
+                    <a class = "nav-link color" href = "login.html">Login</a>
+                </li>
+                
+                
+                
+
+                
+            </ul>
+        </div>
+        
+    </nav>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+          <h1 class="display-4 black">Your Dream Destination awaits!</h1>
+          <p class="lead "><em>Wherever you go, go with all your heart</em></p>
+          
+          <p></p>
+          <p class="lead">
+            <a class="btn btn-primary book btn-lg" href="#here" role="button">Booking your hotel</a>
+          </p>
+        </div>
+
+
+        <div id = "booking">
+        <div class = "container">
+        <div class="col-md-7 ">
+                    <section id="first-tab-group" class="tabgroup">
+                        <div id="tab1">
+                            <div class="submit-form">
+                                <h4 id = "here"><strong>Book your Hotel here! </strong></h4>
+                                <form id="form-submit" action="" method="get">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label id = "form" for="from">Choose location:</label>
+                                                <select class = "change" required name='from'>
+                                                    <option  class = "option" value="">Select a location</option>
+                                                    <option class = "option" value="Cambodia">Afghanistan</option>
+                                                    <option class = "option" value="Cambodia">Albania</option>
+                                                    <option class = "option" value="Cambodia">Algeria</option>
+                                                    <option class = "option" value="Cambodia">Argentina</option>
+                                                    <option class = "option" value="Cambodia">Australia</option>
+                                                    <option class = "option" value="Cambodia">Austria</option>
+                                                    <option class = "option" value="Cambodia">Bahamas</option>
+                                                    <option class = "option" value="Cambodia">Bahrain</option>
+                                                    <option class = "option" value="Cambodia">Bangladesh</option>
+                                                    <option class = "option" value="Cambodia">Belgium</option>
+                                                    <option class = "option" value="Cambodia">Belarus</option>
+                                                    <option class = "option" value="Cambodia">Brazil</option>
+                                                    <option class = "option" value="Cambodia">Canada</option>
+                                                    <option class = "option" value="Cambodia">Chile</option>
+                                                    <option class = "option" value="Cambodia">China</option>
+                                                    <option class = "option" value="Cambodia">Croatia</option>
+                                                    <option class = "option" value="Cambodia">Cyprus</option>
+                                                    <option class = "option" value="Hong Kong">Czech Republic</option>
+                                                    <option class = "option" value="India">Denmark</option>
+                                                    <option class = "option" value="Japan">Dominican Republic</option>
+                                                    <option class = "option" value="Korea">Ecuador</option>
+                                                    <option class = "option" value="Laos">Egypt</option>
+                                                    <option class = "option" value="Myanmar">Estonia</option>
+                                                    <option class = "option" value="Singapore">Fiji</option>
+                                                    <option class = "option" value="Thailand">Finland</option>
+                                                    <option class = "option" value="Vietnam">France</option>
+                                                    <option class = "option" value="Vietnam">Germany</option>
+                                                    <option class = "option" value="Vietnam">Greece</option>
+                                                    <option class = "option" value="Vietnam">Hungary</option>
+                                                    <option class = "option" value="Vietnam">Iceland</option>
+                                                    <option class = "option" value="Vietnam">India</option>
+                                                    <option class = "option" value="Vietnam">Indonesia</option>
+                                                    <option class = "option" value="Vietnam">Ireland</option>
+                                                    <option class = "option" value="Vietnam">Italy</option>
+                                                    <option class = "option" value="Vietnam">Jamaica</option>
+                                                    <option class = "option" value="Vietnam">Japan</option>
+                                                    <option class = "option" value="Vietnam">Libya</option>
+                                                    <option class = "option" value="Vietnam">Luxembourg</option>
+                                                    <option class = "option" value="Vietnam">Malaysia</option>
+                                                    <option class = "option" value="Vietnam">Maldives</option>
+                                                    <option class = "option" value="Vietnam">Mauritius</option>
+                                                    <option class = "option" value="Vietnam">Mexico</option>
+                                                    <option class = "option" value="Vietnam">Nepal</option>
+                                                    <option class = "option" value="Cambodia">Netherland</option>
+                                                    <option class = "option" value="Cambodia">New Zealand</option>
+                                                    <option class = "option" value="Cambodia">Oman</option>
+                                                    <option class = "option" value="Cambodia">Poland</option>
+                                                    <option class = "option" value="Cambodia">Portugal</option>
+                                                    <option class = "option" value="Cambodia">Qatar</option>
+                                                    <option class = "option" value="Cambodia">Romania</option>
+                                                    <option class = "option" value="Cambodia">Russia</option>
+                                                    <option class = "option" value="Cambodia">Saudi Arabia</option>
+                                                    <option class = "option" value="Hong Kong">Serbia</option>
+                                                    <option class = "option" value="India">Singapore</option>
+                                                    <option class = "option" value="Japan">Slovakia</option>
+                                                    <option class = "option" value="Korea">Slovenia</option>
+                                                    <option class = "option" value="Laos">Spain</option>
+                                                    <option class = "option" value="Myanmar">Srilanka</option>
+                                                    <option class = "option" value="Singapore">Sweden</option>
+                                                    <option class = "option" value="Thailand">Switzerland</option>
+                                                    <option class = "option" value="Vietnam">Thailand</option>
+                                                    <option class = "option" value="Vietnam">Turkey</option>
+                                                    <option class = "option" value="Vietnam">Ukraine</option>
+                                                    <option class = "option" value="Vietnam">United Arab Emirates</option>
+                                                    <option class = "option" value="Vietnam">United Kingdom</option>
+                                                    <option class = "option" value="Vietnam">United States Of America</option>
+                                                    
+
+
+
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="to">Bed:</label>
+                                                <select class = "form" required name='to' onchange='this.form.()'>
+                                                    <option value="">Select bed</option>
+                                                    <option class = "option" value="Single">Single</option>
+                                                    <option class = "option" value="Double">Double</option>
+                                                    <option class = "option" value="Double Delux">Double Delux</option>
+                                                    <option class = "option" value="Queen size">Queen size</option>
+                                                    <option class = "option" value="King size">King size</option>
+                                                   
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="departure">Check In date:</label>
+                                                <input name="deparure" type="text" class="form-control date" id="deparure" placeholder="Select date" required="" onchange='this.form.()'>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="return">Check out date:</label>
+                                                <input name="return" type="text" class="form-control date" id="return" placeholder="Select date" required="" onchange='this.form.()'>
+                                            </fieldset>
+                                        </div>
+                                       
+
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label id = "form" for="from">No of rooms:</label>
+                                                
+                                                    <input class = "coupon" name="total" type="number" class="form-control " id="ttotal" value = "0" required="" onchange='this.form.()'>
+                                                
+                                                
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+
+                                                <label id = "form" for="from">Dsicount Coupon(if any):</label>
+
+                                                <input type="text" class="coupon" placeholder="">
+                                            </fieldset>
+
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <fieldset>
+
+                                                <label id = "form" for="from">Airport name:</label>
+
+                                                <input type="text" class="coupon" placeholder="">
+                                            </fieldset>
+
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label id = "form" for="from">Distance from airport (in metre):</label>
+                                                
+                                                    <input class = "coupon" name="total" type="number" class="form-control " id="ttotal" value = "0" required="" onchange='this.form.()'>
+                                                
+                                                
+                                            </fieldset>
+
+                                        
+                                        
+                                        
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <button type="submit" id="form-submit" class="btn">Search Hotel</button>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+              </div>
+          </div>
+      </div>
+  		
+
+	
+
+
+    
+    
+
+    <div class = "footer bg-info">
+                <section class="services">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="service-item first-service">
+                                    <div class="service-icon"></div>
+                                    <h4>Easy Tooplate</h4>
+                                    <p>Uer friendly, very easy to use. Uses the most common options</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="service-item second-service">
+                                    <div class="service-icon"></div>
+                                    <h4>Unique Ideas</h4>
+                                    <p>We have the best research team that comes up with the most amazing idea</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="service-item third-service">
+                                    <div class="service-icon"></div>
+                                    <h4>Best Support</h4>
+                                    <p>Here at Airline Reservation, support is available 24/7</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                     
+                    
+        </div>
+                
+                    <div class = "ttr">
+                        <a  href = "#"><span class = "linked">Linked</span><i class = "  fa fa-linkedin"></i></a>
+                        <a href="#" class="merge fa fa-twitter"></a>
+                    </div>
+
+                    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/datepicker.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

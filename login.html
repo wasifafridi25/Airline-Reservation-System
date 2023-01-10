@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	 <link rel="stylesheet" href="style.css">
+	 <style>
+	 	.set{
+	 		width:500px !important
+	 	}
+	 	form{
+	 		margin:10px;
+	 	}
+	 </style>
+
+</head>
+<body>
+
+	<nav class = "navbar bg-success navbar-dark navbar-expand-md sticky-top">
+  		<div class = "m1">
+  			<ul class = "navbar-nav">
+	  			<li class = "nav-item">
+  					<p class = "nav-item lead color"> Airline Reservation</p>
+  				</li>
+  				<ul class = "navbar-nav">
+	  			<li class = "nav-item">
+  					<div class = "logo nav-item"><img id = "icon" src = "plane-icon.png"></div>
+  				</li>
+  		</div>
+  		<div class = "m2">
+	  		
+	  		<ul class = "navbar-nav">
+	  			<li class = "nav-item">
+	  				<a class = "nav-link color" href = "online booking.html">Home</a>
+	  			</li>
+	  			<li class = "nav-item">
+	  				<a class = "nav-link color" href = "online booking.html">Flight Booking</a>
+	  			</li>
+	  			<li class = "nav-item">
+	  				<a class = "nav-link color" href = "weather.html">Check Weather</a>
+	  			</li>
+	  			<li class = "nav-item">
+	  				<a class = "nav-link color" href = "hotel.html">Search Hotels</a>
+	  			</li>
+	  			</li>
+                 <li class = "nav-item">
+                    <a class = "nav-link color" href = "stats.html">Stats</a>
+                </li>
+                <li class = "nav-item">
+                    <a class = "nav-link color" href = "login.html">Login</a>
+                </li>
+	  			
+	  			
+	  			
+
+	  			
+	  		</ul>
+  	    </div>
+  		
+	</nav>
+
+
+	<form >
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="set form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class=" set form-control" id="pwd">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+ <a href = "online booking.html"><button type="submit" id="form-submit" class="btn btn-primary">Login</button></a>
+</form>
+
+</body>
+</html>

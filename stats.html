@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/datepicker.css">
+        <link rel="stylesheet" href="css/tooplate-style.css">
+        <style>
+        	h1{
+        		text-align: center;
+        	}
+        </style>
+
+</head>
+<body>
+	<nav class = "navbar bg-success navbar-dark navbar-expand-md sticky-top">
+  		<div class = "m1">
+  			<ul class = "navbar-nav">
+	  			<li class = "nav-item">
+  					<p class = "nav-item lead color"> Airline Reservation</p>
+  				</li>
+  				<ul class = "navbar-nav">
+	  			<li class = "nav-item">
+  					<div class = "logo nav-item"><img id = "icon" src = "plane-icon.png"></div>
+  				</li>
+  		</div>
+  		<div class = "m2">
+	  		
+	  		<ul class = "navbar-nav">
+	  			<li class = "nav-item">
+	  				<a class = "nav-link color" href = "online booking.html">Home</a>
+	  			</li>
+	  			<li class = "nav-item">
+	  				<a class = "nav-link color" href = "online booking.html">Flight Booking</a>
+	  			</li>
+	  			<li class = "nav-item">
+	  				<a class = "nav-link color" href = "weather.html">Check Weather</a>
+	  			</li>
+	  			<li class = "nav-item">
+	  				<a class = "nav-link color" href = "hotel.html">Search Hotels</a>
+	  			</li>
+	  			</li>
+                 <li class = "nav-item">
+                    <a class = "nav-link color" href = "stats.html">Stats</a>
+                </li>
+                <li class = "nav-item">
+                    <a class = "nav-link color" href = "login.html">Login</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+	<script type="text/javascript">
+
+window.onload = function () {
+	var chart1 = new CanvasJS.Chart("chartContainer", {
+		title:{
+			text: "Number of people who have Travelled this year"              
+		},
+		data: [              
+		{
+			// Change type to "doughnut", "line", "splineArea", etc.
+			type: "column", name: "No of People",
+			dataPoints: [
+				{ label: "May",  y: 2.5  },
+				{ label: "June", y: 3.5  },
+				{ label: "July", y: 3.2  },
+				{ label: "August",  y: 2.5  },
+				{ label: "September",  y: 2.9  }
+				
+
+			]
+		}
+		], 
+		axisY:{
+      suffix: "K"
+    } 
+		
+	});
+
+	var chart2 = new CanvasJS.Chart("chartContainer2", {
+		title:{
+			text: "Number of people who have Travelled last year"              
+		},
+		data: [              
+		{
+			// Change type to "doughnut", "line", "splineArea", etc.
+			type: "column", name: "No of People",
+			dataPoints: [
+				{ label: "May",  y: 28.5  },
+				{ label: "June", y: 32.5  },
+				{ label: "July", y: 32.2  },
+				{ label: "August",  y: 27.5  },
+				{ label: "September",  y: 29.9  }
+				
+
+			]
+		}
+		], 
+		axisY:{
+      suffix: "K"
+    } 
+		
+	});
+	
+	   var chart4 = new CanvasJS.Chart("chartContainer4", {            
+      title:{
+        text: "Domestic vs International Flights in 2020"              
+      },
+
+      data: [  //array of dataSeries     
+      { //dataSeries - first quarter
+ /*** Change type "column" to "bar", "area", "line" or "pie"***/        
+       type: "column",
+       name: "Domestic",
+       showInLegend: true,
+       dataPoints: [
+       { label: "May", y: 1.9 },
+       { label: "June", y: 2.8 },
+       { label: "July", y: 2.7 },                                    
+       { label: "August", y: 2.2 },
+       { label: "September", y: 2.3 }
+       ]
+     },
+
+     { //dataSeries - second quarter
+
+      type: "column",
+      name: "International", 
+      showInLegend: true,               
+      dataPoints: [
+      { label: "May", y: .7 },
+      { label: "June", y: .9 },
+      { label: "July", y: .8 },                                    
+      { label: "August", y: .6 },
+      { label: "September", y: .6 }
+      ]
+    }
+    ],
+ /** Set axisY properties here*/
+    axisY:{
+      
+      suffix: "K"
+    }    
+  });
+
+
+
+
+	chart1.render();
+	chart2.render();
+	
+	chart4.render();
+	
+}
+</script>
+
+<h1>2019 vs 2020</h1>
+ <div class="container">
+			            <div class="row">
+			                <div class="col-md-6">
+							
+								<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+							</div>
+							<div class="col-md-6">
+							
+								<div id="chartContainer2" style="height: 300px; width: 100%;"></div>
+							</div>
+
+						</div>
+						<hr>
+
+						<div class="row">
+			                <div class="col-md-12">
+							
+								<div id="chartContainer4" style="height: 300px; width: 100%;"></div>
+							</div>
+							
+
+						</div>
+					</div>
+
+
+<div class = "footer bg-info">
+				<section class="services">
+			        <div class="container">
+			            <div class="row">
+			                <div class="col-md-4">
+			                    <div class="service-item first-service">
+			                        <div class="service-icon"></div>
+			                        <h4>Easy Tooplate</h4>
+			                        <p>Uer friendly, very easy to use. Uses the most common options</p>
+			                        </a>
+			                    </div>
+			                </div>
+			                <div class="col-md-4">
+			                    <div class="service-item second-service">
+			                        <div class="service-icon"></div>
+			                        <h4>Unique Ideas</h4>
+			                        <p>We have the best research team that comes up with the most amazing idea</p>
+			                        </a>
+			                    </div>
+			                </div>
+			                <div class="col-md-4">
+			                    <div class="service-item third-service">
+			                        <div class="service-icon"></div>
+			                        <h4>Best Support</h4>
+			                        <p>Here at Airline Reservation, support is available 24/7</p>
+			                        </a>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </section>
+			</div>
+			        
+    	
+    			
+    				<div class = "ttr">
+						<a  href = "#"><span class = "linked">Linked</span><i class = "  fa fa-linkedin"></i></a>
+						<a href="#" class="merge fa fa-twitter"></a>
+					</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+.aln{
+    		margin-left: 200px;
+    		margin-top:40px;
+    	}
+    	
+    	.m1{
+    		margin-right: 40px;
+    		margin-bottom:-17px;
+    	}
+    	.m2{
+    		margin-left:470px;
+    	}
+    	.jumbotron{
+    		background: url("Airplane.jpg") no-repeat;
+    		background-size:cover;
+
+    		text-align: center;
+    		color:white;
+    	}
+    	#email{
+    		width:300px
+    		
+    	}
+    	.img1{
+    		height:400px;
+    	}
+    	body{
+    		background-color: ;
+    	}
+    	#about{
+    		background-color: red;
+    		width:200px;
+    	}
+	    
+		.footer{
+			
+			padding-top:50px;
+			margin-top: 50px;
+		
+		}
+		.l1{
+			text-decoration: underline;
+			color:white;
+		}
+		.ttr{
+			margin-left:699px;
+			
+		}
+		.merge{
+			margin:30px 10px 20px 200px;
+		}
+		.linked{
+			color:black;
+			font-weight:bold;
+
+		}
+
+		#icon{
+			width:60px;
+			margin-left: 10px;
+			margin-bottom: 14px
+
+		}
+		#writing{
+			position:relative;
+			top:70px;
+		}
+		.btn-lg{
+			margin-left:800px;
+			margin-top: 100px
+		}
+		.m2{
+			color:white;
+		}
+		.color{
+			color:white;
+		}
+		nav .nav-item a{
+			color:white !important;
+		}
+		.black{
+			color:black;
+		}
+		body{
+			background-color: transparent;
+		}
+		.navbar{
+			margin:0;
+		}
+		.option{
+			color:black;
+		}
+		.coupon{
+			background-color: #E5E5E5;
+			outline:0;
+			border-width: 0;
+			width:290px;
+			height:32px;
+			position:relative;
+			top:-10px;
+		}
+		hr{
+  border-top: 1px solid black;
+}
+.col-md-4{
+	height:90%;
+}
+
+
